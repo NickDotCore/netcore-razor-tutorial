@@ -18,13 +18,13 @@ namespace netcore_razor_tutorial.Pages
         }
 
         [BindProperty(SupportsGet = true)]
-        public string FirstName { get; set; }
+        public string City { get; set; }
 
         public void OnGet() // what renders the page
         {
-            if (string.IsNullOrEmpty(FirstName))
+            if (string.IsNullOrEmpty(City))
             {
-                FirstName = "User";
+                City = "The Web";
             }
         }
 

@@ -5,3 +5,12 @@
 }
 
 <h1>Add Address</h1>
+
+<!-- asp-for is used for linking -->
+<form method="post">
+    <input type="text" asp-for="address.StreetAddress" placeholder="Street Address" />
+    <input type="text" asp-for="address.City" placeholder="City" />
+    <input type="text" asp-for="address.State" placeholder="State" />
+    <input type="text" asp-for="address.ZipCode" placeholder="Zip Code" />
+    <button type="submit">Submit</button>
+</form>
